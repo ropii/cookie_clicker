@@ -9,56 +9,72 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WELCOME"
-        android:textColor="#8DF491"
-        android:textSize="60dp" />
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cookie"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME"
+                android:textColor="#8DF491"
+                android:textSize="60dp" />
 
-        />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cookie"
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:textColor="@color/black"
-        android:backgroundTint="#8DF491"
-        android:text="play Demo"
-        android:id="@+id/btn_play_demo"
-        />
+                />
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:textColor="@color/black"
-        android:backgroundTint="#8DF491"
-        android:text="play WEB"
-        android:id="@+id/btn_play_web"
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#8DF491"
+                android:text="play Demo"
+                android:id="@+id/btn_play_demo"
+                />
 
-        />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#8DF491"
+                android:text="play WEB"
+                android:id="@+id/btn_play_web"
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:textColor="@color/black"
-        android:backgroundTint="#8DF491"
-        android:text="rules"
-        android:id="@+id/btn_rules"
+                />
 
-        />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#8DF491"
+                android:text="rules"
+                android:id="@+id/btn_rules"
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:id="@+id/btn_about"
-        android:textColor="@color/black"
-        android:backgroundTint="#8DF491"
-        android:text="about" />
+                />
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:id="@+id/btn_xo"
+                android:textColor="@color/black"
+                android:backgroundTint="#8DF491"
+                android:text="X/O" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 
 </LinearLayout>

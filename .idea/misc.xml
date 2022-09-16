@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android_yb/cookieclicker/app/src/main/res/drawable/gradient.xml" value="0.1" />
+        <entry key="..\:/android_yb/cookieclicker/app/src/main/res/drawable/horizontal.xml" value="0.1" />
+        <entry key="..\:/android_yb/cookieclicker/app/src/main/res/drawable/vertical.xml" value="0.1" />
         <entry key="..\:/android_yb/cookieclicker/app/src/main/res/layout/activity_about.xml" value="0.36666666666666664" />
         <entry key="..\:/android_yb/cookieclicker/app/src/main/res/layout/activity_game.xml" value="0.36666666666666664" />
         <entry key="..\:/android_yb/cookieclicker/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/android_yb/cookieclicker/app/src/main/res/layout/activity_rules.xml" value="0.36666666666666664" />
+        <entry key="..\:/android_yb/cookieclicker/app/src/main/res/layout/activity_tictactoe.xml" value="0.30092592592592593" />
       </map>
     </option>
   </component>

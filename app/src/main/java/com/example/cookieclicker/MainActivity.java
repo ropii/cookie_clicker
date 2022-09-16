@@ -13,20 +13,20 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn_play_demo, btn_play_web, btn_rules, btn_about;
+    Button btn_play_demo, btn_play_web, btn_rules,btn_xo;
     AlertDialog ad;
-    Intent it_rules,it_about,it_game;
+    Intent it_rules,it_about,it_game,it_xo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_about = findViewById(R.id.btn_about);
         btn_play_demo = findViewById(R.id.btn_play_demo);
         btn_play_web = findViewById(R.id.btn_play_web);
         btn_rules = findViewById(R.id.btn_rules);
+        btn_xo = findViewById(R.id.btn_xo);
 
-        btn_about.setOnClickListener(this);
+        btn_xo.setOnClickListener(this);
         btn_play_demo.setOnClickListener(this);
         btn_play_web.setOnClickListener(this);
         btn_rules.setOnClickListener(this);
@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        if(view==btn_xo){
+            it_xo = new Intent(this, Tictactoe.class);
+            startActivity(it_xo);
+        }
         if (view==btn_play_web){
             alert();
         }
@@ -68,11 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(it_rules);
 
         }
-        if(view==btn_about){
-            it_about = new Intent(this, about.class);
-            startActivity(it_about);
 
-        }
         if(view==btn_play_demo){
             it_game = new Intent(this, game.class);
             startActivity(it_game);

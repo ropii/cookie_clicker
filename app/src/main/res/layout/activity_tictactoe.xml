@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Tictactoe"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="איקס עיגול "
+        android:textSize="50sp"
+        android:textColor="#16534D"/>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" הכניסו את שמכם: "
+        android:textSize="20sp"
+        android:textColor="#16534D"/>
+
+    <GridLayout
+        android:id="@+id/gridEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+        <EditText
+            android:id="@+id/etNameX"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="שחקן ראשון"
+            android:textColorHint="#16534D"
+            android:textColor="#16534D"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:backgroundTint="#16534D"
+            />
+
+        <EditText
+            android:id="@+id/etNameO"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="שחקן שני"
+            android:textColorHint="#16534D"
+            android:textColor="#16534D"
+            android:textAlignment="center"
+            android:backgroundTint="#16534D"
+            />
+    </GridLayout>
+
+    <TableLayout
+        android:id="@+id/gameTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <ImageButton
+                android:id="@+id/btn00"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vertical"
+                android:background="#000000"
+                android:layout_marginTop="5dp"/> <!--גבול אנכי-->
+            <ImageButton
+                android:id="@+id/btn01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vertical"
+                android:background="#000000"
+                android:layout_marginTop="5dp"/> <!--גבול אנכי-->
+            <ImageButton
+                android:id="@+id/btn02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+        </TableRow> <!--גבול אופקי-->
+
+        <TableRow>
+            <ImageButton
+                android:id="@+id/btn10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vertical"
+                android:background="#000000" /> <!--גבול אנכי-->
+            <ImageButton
+                android:id="@+id/btn11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vertical"
+                android:background="#000000"/> <!--גבול אנכי-->
+            <ImageButton
+                android:id="@+id/btn12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:src="@drawable/horizontal"
+                android:background="#000000"/>
+        </TableRow> <!--גבול אופקי-->
+
+        <TableRow>
+            <ImageButton
+                android:id="@+id/btn20"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vertical"
+                android:background="#000000"/> <!--גבול אנכי-->
+            <ImageButton
+                android:id="@+id/btn21"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vertical"
+                android:background="#000000" /> <!--גבול אנכי-->
+            <ImageButton
+                android:id="@+id/btn22"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0A635B"
+        android:textColor="#5CD5C9"
+        android:text="משחק חדש"
+        android:onClick="game"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
