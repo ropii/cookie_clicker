@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#552719"
+    android:background="#056041"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".game">
@@ -13,49 +13,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Game"
-        android:textColor="#AC3C19"
+        android:textColor="#8DF491"
         android:textSize="60dp" />
 
     <ImageButton
+        android:id="@+id/ibtn_cookie"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/cookie"
-        android:id="@+id/ibtn_cookie"
-        android:backgroundTint="#552719"
         android:layout_marginBottom="10dp"
-        />
+        android:backgroundTint="#056041"
+        android:src="@drawable/cookie" />
+
     <TextView
+        android:id="@+id/tv_taps"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Taps- 1"
-        android:textColor="#AC3C19"
-        android:textSize="30dp"
         android:textAlignment="center"
-        android:id="@+id/tv_taps"
-        />
+        android:textColor="#8DF491"
+        android:textSize="30dp" />
+
     <TextView
-        android:textSize="30dp"
-        android:textAlignment="center"
+        android:id="@+id/tv_points"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Point- 0"
-        android:textColor="#AC3C19"
-        android:id="@+id/tv_points"
-        />
-    <Button
-        android:layout_marginTop="50dp"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:id="@+id/btn_buy"
-        android:backgroundTint="#AC3C19"
-        android:text="buy a tap at 5" />
+        android:textAlignment="center"
+        android:textColor="#8DF491"
+        android:textSize="30dp" />
 
     <Button
+        android:id="@+id/btn_buy"
         android:layout_width="120dp"
         android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#8DF491"
+
+        android:text="buy a tap at 5"
+        android:textColor="@color/black" />
+
+    <Button
         android:id="@+id/btn_back_to_main"
-        android:backgroundTint="#AC3C19"
-        android:text="back to main" />
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#8DF491"
+        android:text="back to main"
+
+        android:textColor="@color/black" />
 
 
 </LinearLayout>
