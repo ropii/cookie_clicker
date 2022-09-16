@@ -9,13 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Tictactoe extends AppCompatActivity implements View.OnClickListener {
-    Button btnNewGame;
 
+public class Tictactoe extends AppCompatActivity implements View.OnClickListener {
+
+    Button btnNewGame;
 
     ImageButton[][] ivBtnMat = new ImageButton[3][3];
     int[][] isClicked = new int[3][3];
@@ -35,11 +37,10 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tictactoe);
 
         ivBtnMat[0][0] = findViewById(R.id.btn00);
         ivBtnMat[0][0].setOnClickListener(this);
-
         ivBtnMat[0][1] = findViewById(R.id.btn01);
         ivBtnMat[0][1].setOnClickListener(this);
 
@@ -76,11 +77,9 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
 
         gameTable = findViewById(R.id.gameTable);
         gameTable.setVisibility(View.INVISIBLE);
-
     }
 
     public void game(View view) {
-        //בכל משחק חדש נאתחל את הלוח
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 isClicked[i][j] = 0;
@@ -292,5 +291,5 @@ public class Tictactoe extends AppCompatActivity implements View.OnClickListener
         }
         return 1;
     }
-}
 
+}
