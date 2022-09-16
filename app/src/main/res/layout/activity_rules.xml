@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#552719"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".rules">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RULES"
+        android:textColor="#AC3C19"
+        android:textSize="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cookie"
+
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="1. Have fun"
+        android:textSize="30dp"
+        android:textColor="#AC3C19"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="2. Press the cookie"
+        android:textSize="30dp"
+        android:textColor="#AC3C19"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="3. taps= The amount of points you get per click"
+        android:textSize="30dp"
+        android:textColor="#AC3C19"
+        />
+
+    <Button
+        android:layout_margin="100dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_back_to_main"
+        android:backgroundTint="#AC3C19"
+        android:text="back to main" />
+
+
+</LinearLayout>
