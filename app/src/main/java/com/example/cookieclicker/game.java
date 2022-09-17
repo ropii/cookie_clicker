@@ -89,9 +89,9 @@ public class game extends AppCompatActivity implements View.OnClickListener {
                 point = point - price;
                 price *= 2;
                 tap += 1;
-                tv_taps.setText("Taps- " + tap);
+                tv_taps.setText("Taps: " + tap);
                 btn_buy.setText("buy a tap at " + price);
-                tv_points.setText("Points- " + point);
+                tv_points.setText("Points: " + point);
             } else {
                 Toast.makeText(game.this, "you need more points", Toast.LENGTH_SHORT).show();
 
