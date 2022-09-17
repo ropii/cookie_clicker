@@ -53,9 +53,9 @@ public class game extends AppCompatActivity implements View.OnClickListener {
         point=sp.getInt("points",0);
         tap=sp.getInt("taps",1);
         price=sp.getInt("price",5);
-        tv_taps.setText("Taps- " + tap);
+        tv_taps.setText("Taps: " + tap);
         btn_buy.setText("buy a tap at " + price);
-        tv_points.setText("Points- " + point);
+        tv_points.setText("Points: " + point);
     }
 
     @Override
@@ -76,7 +76,7 @@ public class game extends AppCompatActivity implements View.OnClickListener {
         }
         if (view == ibtn_cookie) {
             point += tap;
-            tv_points.setText("Points- " + point);
+            tv_points.setText("Points: " + point);
             Random rand = new Random();
             int random_num = rand.nextInt(10);
             if (random_num==7){
